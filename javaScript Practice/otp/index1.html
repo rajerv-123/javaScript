@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        background-color: rgba(172, 11, 212, 0.151);
+    }
+
+     .header h1 {
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: rgb(5, 139, 0);
+        background-color: teal;
+        height: 50px;
+        
+    }
+    .main{
+        background-color: chocolate;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .main label{
+        transition-duration: 5ms;
+        background-color: transparent;
+    }
+    #output{
+        border: 3px solid transparent;
+        font-family: 'Courier New', Courier, monospace;
+        background-color:aqua;
+        height: 25px;
+        text-shadow: 8.5rem;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <h1>OTP Generator</h1>
+    </div>
+    
+    
+    <div class="main">
+        <label for="">User Name</label>
+        <input type="text" id="input">
+        <br><br>
+        <label for="">Phone No</label>
+        <input type="number" id="phone">
+        <br><br>
+        <label for="">Your EmailId</label>
+        <input type="text" id="mail">
+        <br><br>
+        <button onclick="getotp()">Get OTP</button>
+        <br><br>
+        <div id="output">
+            
+        </div>
+
+    </div>
+
+    <script>
+    function getotp() {
+        var x = Math.random() * (9999 - 1000) + 1000
+        var otp = Math.floor(x)
+        console.log(otp)
+        var name = document.getElementById("input").value
+        document.getElementById("output").innerHTML = "dear"+name +" your OTP is : " + otp
+    }
+    </script>
+    
+
+
+
+</body>
+
+</html>

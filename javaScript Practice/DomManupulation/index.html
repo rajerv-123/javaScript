@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    
+    <script>
+        // var heading = document.getElementsByTagName("h1")
+        // console.log(heading)
+        // output:: collection of object
+        // var heading = document.getElementsByTagName("h1")
+        // function red(){
+        //     heading[0].style.color="red";
+
+        // }
+        // function yellow(){
+        //     heading[0].style.color="yellow";
+
+        // }function blue(){
+        //     heading[0].style.color="blue";
+        //     heading[0].style.backgroundColor="black";
+
+        // }
+        function ChangeColor(){
+        var heading = document.getElementsByTagName("h1")
+        for(let i = 0; i <heading.length; i++){
+            heading[0].style.color="pink";
+        }
+    }
+    function FontStyle(){
+        var heading = document.getElementsByTagName("h1")
+        for(let i = 0; i <heading.length; i++){
+            heading[1].style.fontStyle="italic";
+        }
+    }
+    function ChangeBorder(){
+        var heading = document.getElementsByTagName("h1")
+        for(let i = 0; i <heading.length; i++){
+            heading[2].style.border=" 2px solid green";
+        }
+    }
+
+    function Reset(){
+        location.reload()
+    }
+    var x = document.getElementsByTagName("*");
+        console.log(x)
+    </script>
+    <body>
+    <!-- <h1>document ocject model </h1>
+    <button onclick="red()">red</button>
+    <button onclick="yellow()">yellow</button>
+    <button onclick="blue()">green</button> -->
+
+    <h1>document Object Model</h1>
+    <h1>JS</h1>
+    <h1>React-JS</h1>
+    <button onclick="ChangeColor()">change color</button>
+    <button onclick="FontStyle()">change style</button>
+    <button onclick="ChangeBorder()">change border</button>
+    <button onclick="Reset()">reset</button>    
+
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <script>
+
+        document.onkeydown = function (e) {
+            switch (e.keyCode) {
+                case 37:
+                    document.body.style.backgroud = "black"
+                    break;
+                case 38:
+                    document.body.style.backgroud= "red"
+                    break;
+                case 39:
+                    document.body.style.backgroud = "pink"
+                    break;
+                case 40:
+                    document.body.style.backgroud = "blue"
+                    break;
+                case 65:
+                var  x =  document.createElement("h1")
+                x.textContent ="rajeev"
+                document.body.appendChild(x)
+                break;
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body>
+
+        <h1>document object model</h1>
+        <h1 id="js">Java_script</h1>
+        <h1 class="f1">Spring</h1>
+        <h1 class="f1">Hibernet</h1>
+    
+
+        <script>
+            var ele1 = document.querySelector("h1,#js,.f1");
+            var ele2 = document.querySelector("#js,h1,.f1");
+            var ele3 = document.querySelector(".f1,h1,#js");
+
+            console.log(ele1)
+            console.log(ele2)
+            console.log(ele3)
+
+        </script>
+    </body>
+</html>

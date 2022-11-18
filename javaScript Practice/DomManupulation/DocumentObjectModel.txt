@@ -1,0 +1,278 @@
+Date: 08/11/22
+1) GET ELEMENT BY TAG NAME 
+	>>>>   THIS FUNCTION IS BASICALLY USED TO TARGET Or FETCH AND ELEMENT FROM THE DOCUMENT OBJECT MODEL 
+             THIS FUNCTION TARGET THE ELEMENT BASED ON TAG NAME 
+
+
+
+eg: 1. 
+	<body>
+    <h1>document ocject model </h1>
+    <h1> Java_script</h1>
+	</body>
+	<script>
+        var heading = document.getElementsByTagName("h1")
+        console.log(heading)
+        // output:: collection of object
+     </script>
+    
+
+    . with respect to above code we are targeting the heading element based on the tag name.
+    
+eg: 2.
+
+	<script>
+        // var heading = document.getElementsByTagName("h1")
+        // console.log(heading)
+        // output:: collection of object
+        var heading = document.getElementsByTagName("h1")
+        function red(){
+            heading[0].style.color="red";
+
+        }
+        function yellow(){
+            heading[0].style.color="yellow";
+
+        }function blue(){
+            heading[0].style.color="blue";
+
+        }
+    </script>
+     <body>
+    <h1>document ocject model </h1>
+    <button onclick="red()">red</button>
+    <button onclick="yellow()">yellow</button>
+    <button onclick="blue()">green</button>
+
+	.. with respect to above code we are targeting the heading elememt using get element by tag name function
+	.. this function targets the selected elements and stores it  in array like object so , hence to access we have to use index position.
+
+Date: 09/11/22
+
+eg: 
+	 var x = document.getElementsByTagName("*");
+       console.log(x)
+	 the above code target all the elements present insidee the DOM tree..
+
+
+
+
+2.	Document.getElementById:
+	getElementById by Id function targets and returs only one particular sepecified element based on id value
+
+
+eg:1
+	
+        <h1 id="heading2">document object model</h1>
+        <h1>node js</h1>
+        <h1 id="heading2">angulor js</h1>
+        <script>
+            var x = document.getElementById("heading");
+            console.log(x)
+	  </script>
+	output :> null
+eg:2
+	
+	<h1 id="heading1">document object model</h1>
+        <h1 id="heading2">node js</h1>
+        <h1 id="heading3">angulor js</h1>
+        <script>
+            var x = document.getElementById("heading1");
+            console.log(x)
+note: With respect to above code both the haading contains the same id value so hence the function target the first occuring element with the matching id value.
+
+eg:3
+	<h1 id="heading">document object model</h1>
+       <button onclick="click()">click here</button>
+        <script> 
+        function click(){
+            var x = document.getElementById("heading").innerHTML
+            alert(x)
+        }
+
+eg: 4
+
+			<h1>Select scripting language</h1>
+            <input type="radio" id="input1" name="r1" value="java"> java
+            <br><br>
+            <input type="radio" id="input2" name="r1" value="javaScript"> javaScript
+            <br><br>
+            <input type="radio" id="input3" name="r1" value="python"> python
+            <br><br>
+            <input type="radio" id="input4" name="r1" value="c#"> c#
+            <br><br>
+            <button onclick="validate()">Submit</button>
+    <script>
+        function validate(){
+                var x1 = document.getElementById("input1")
+                var x2 = document.getElementById("input2")
+                var x3 = document.getElementById("input3")
+                var x4 = document.getElementById("input4")
+            if(x1.checked==true){
+                alert("answer selected is " + x1.value)
+            }
+            else if(x2.checked==true)
+            {
+                alert("answer selected is " + x2.value)
+            }
+            else if(x3.checked==true)
+            {
+                alert("answer selected is " + x3.value)
+            }else if(x4.checked==true)
+            {
+                alert("answer selected is " + x4.value)
+            }
+            else
+            {
+                alert("no answer is selected")
+            }
+
+        }
+    </script>
+
+
+3: document.getElementByClassName()
+
+		this function targets and returns all the elements with matching class value.
+          it returns HTML collection object and as to the access to using index value.
+eg:1
+
+
+	<h1 id="blue">1. Java</h1>
+    <h1 class="orange">2. JavaScript</h1>
+    <h1 class="orange">3. Spring</h1>
+    <h1 class="orange">4. React</h1>
+    <h1 id="blue">5. HTML</h1>
+    <button onclick="">Orange</button>
+
+    <script>
+        var x = document.getElementsByClassName("orange");
+        console.log(x)
+    </script>
+
+
+	Output: {
+    "0": {},
+    "1": {},
+    "2": {}
+	}
+
+
+eg:2
+
+	<h1 id="blue">1. Java</h1>
+    <h1 class="orange">2. JavaScript</h1>
+    <h1 class="orange">3. Spring</h1>
+    <h1 class="orange">4. React</h1>
+    <h1 id="blue">5. HTML</h1>
+    <button onclick="ch()">Orange</button>
+
+    <script>
+        function ch() {
+            var x = document.getElementsByClassName("orange");
+            console.log(x)
+            for(i=0;i<x.length;i++){
+                x[i].style.color="orange"
+            }
+        }
+	</script>
+
+
+<h1> java <h1>
+<h1 class = "abc"> javascript<h1>
+<h1 id= "heading">  Html <h1>// getElementById("heading")
+<h1 class= "ABC" > c# </h1>
+<h1> python <h1>
+<h1 class = "abc"> ADDA </h1> 
+ 
+
+some Modification 
+getElementByTagName("h1") 
+    > index value [Array]
+
+// getElementByTagName("ABC")
+
+ 
+
+4: Document.Query Selectors 
+
+	qurey selector function is used to target and element using tag name, id value,class name.
+	In which whichever input available frist that is tag name id value , class value it returs that particulor element.
+
+	
+
+
+querty selector all:>
+
+ 	query selector all function is used to target and element using tag name , id value , class value 
+	in which whichever input avaiable frist that is tag name id value class value it returns the all elements 
+
+
+ eg: > 
+	   <h1>document object model</h1>
+        <h1 id="js">Java_script</h1>
+        <h1 class="fw">Spring</h1>
+        <h1 class="fw">Hibernet</h1>
+
+        <script>
+            // fetching elements with respect to tag name
+
+            var ele1 = document.querySelectorAll("h1")
+            console.log(ele1)
+
+            // fetching elements with respect to ID
+
+            var ele2 = document.querySelectorAll("#js");
+            console.log(ele2)
+
+            // fetching elements with respect to class 
+
+            var ele3 = document.querySelectorAll(".fw")
+            console.log(ele3)
+        </script>
+
+
+.........................................................................................................................
+
+
+#Create element>
+
+	
+	create element is a function which is capable of geneating any HTML tag. 
+
+#text content >
+	textContent.innerHTML  > text Content an innerHTMl is the property which will add text data to the created element
+						
+
+	
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#Advanced Selectors 
+
+	#appendChild: 
+				"appendChild function is basically used to insert an element inside another element as last child"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

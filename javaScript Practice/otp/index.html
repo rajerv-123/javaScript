@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="" type="" href="script.js">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #div {
+        border: 2px solid;
+        padding: 15px;
+        background-color: blueviolet;
+        text-align: center;
+    }
+
+    #output {
+        border: 2px dotted red;
+        font-style: italic;
+        background-color: rgb(244, 245, 245);
+    }
+</style>
+
+<body>
+    
+
+    <div id="div">
+        <label for="">User name</label>
+        <input type="" id="input">
+        <br><br>
+        <label for="">Phone No.</label>
+        <input type="" id="phone">
+        <br><br>
+
+        <button onclick="getotp()">send otp</button>
+        <br> <br>
+
+        <div id="output">
+
+        </div>
+
+
+    </div>
+    <script>
+        // var x = Math.random()
+        // console.log(x)
+        // console.log(x * 100000)
+        // // to get the four digits random number generates random number 0 to 1 ie floating value
+        // math.random() * (hn - ln) + ln // higest number (hs) 
+        // var rasult = Math.random() * (9999 - 1000) + 1000 // (ln) lowest number
+        // console.log(rasult)
+
+        // // to remove the float value from the result we have  a function
+        // var otp = Math.floor(result)
+        // console.log(otp)
+
+
+        //we can also write the function 
+        function getotp() {
+            var x = Math.random() * (9999 - 1000) + 1000
+            var otp = Math.floor(x)
+            console.log(otp)
+            document.getElementById("output").innerHTML = "dear customer your OTP is : " + otp
+        }
+    </script>
+
+</body>
+
+</html>

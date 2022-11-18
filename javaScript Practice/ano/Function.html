@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            border: 2px solid red;
+            background-color: antiquewhite;
+            text-align: center;
+            margin: auto;
+            padding: 105;
+            border-color: chartreuse;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10%;
+            background-color: aquamarine;
+            border: 2px solid gray;
+        }
+
+        button {
+            background-color: hotpink;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <script>
+        x = 0;
+        function inc() {
+            x++;
+            document.getElementById("heading").innerHTML = x
+            if(X==10){
+                document.getElementById("heading").innerHTML="NIKAL BSDK";
+            }            
+        }
+        x = 0;
+        function dec() {
+            x--;
+            document.getElementById("heading").innerHTML = x
+            if(x==-10){
+                document.getElementById("heading").innerHTML="bye bye";
+            }
+        }
+        function res() {
+            x = 0
+            document.getElementById("heading").innerHTML = 0;
+        }
+        
+
+
+    </script>
+
+    <div>
+        <h1 id="heading">0</h1>
+        <button onclick="inc()">inc</button>
+        <button onclick="dec()">dec</button>
+        <button onclick="res()">reset</button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0px;
+
+        }
+
+        h1 {
+            border: 2px solid red;
+        }
+    </style>
+
+
+    <h1 id="heading">Hello</h1>
+
+    <script>
+
+        // target the element
+        var x = document.getElementById("heading");
+
+        // create the element
+        var tag = document.createElement("h1")
+        tag.textContent = "javascript"
+        console.log(tag)
+
+
+        // add the created element in all the 4 side 
+
+        // x.insertAdjacentElement(InsertPosition,element)
+
+        // x.insertAdjacentElement("beforebegin",tag)
+        // x.insertAdjacentElement("beforeend",tag)
+        //x.insertAdjacentElement("afterbegin",tag)
+        x.insertAdjacentElement("afterend", tag)
+
+
+    </script>
+
+</body>
+
+</html>

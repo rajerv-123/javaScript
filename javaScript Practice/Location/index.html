@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    
+            <script>
+                // for finding current location                 
+                var successCallback = (position) => {console.log(position)}
+                var errorCallback = (position) => {console.log(position)}
+              //location.reload();  // reload is reload page automatically continuously
+                navigator.geolocation.getCurrentPosition(successCallback,errorCallback);
+                //for watch position 
+                navigator.geolocation.watchPosition(successCallback,errorCallback);
+
+
+
+            </script>
+
+    </body>
+</html>

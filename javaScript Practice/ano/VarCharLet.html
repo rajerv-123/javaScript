@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="VarLetConst.js">
+
+</head>
+
+<body>
+    <button id="demo" onclick="myfunction()" style="cursor:pointer">Click Me</button>
+
+    <script>
+
+        function myfunction(){
+            document.getElementById("demo").style.color = "red";
+        }
+        
+        // for (var i = 0; i < 10; i++) {
+        //     console.log("inside the loop :" + i); // var is global elelment 
+        // }
+        // console.log("outside the loop : "+ i);
+        // for (let i = 0; i < 10; i++) { // let is block level element 
+        //     console.log("inside the loop :" + i);
+        // }
+        // console.log("outside the loop : "+ i);
+
+        // their are 7 non - premitive data type in js 
+        // nn bb ss u
+        let a = 1;
+        let b = null;
+        let c = true;
+        let d = BigInt(567);
+        let e = "String";
+        let f = Symbol("i am a symbol");
+        let g // undefined
+        console.log(typeof(a) +  a);
+        console.log(typeof(b) +  b);
+        console.log(typeof(c) +  c);
+        console.log(typeof(d) +  d);
+        console.log(typeof(e) +  e);
+        console.log(typeof(f) +  f);
+        console.log(typeof(g) +  g);
+
+        // Object in js
+        // const item ={
+        //     "name" : mohan,
+        //     "rollNo": 40,
+        //     "collegeName": Nri,
+        //     "address": bhopal
+        // }
+        // console.log(item["rollNo"]);
+
+
+    </script>
+
+</body>
+
+</html>

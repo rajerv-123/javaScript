@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(28, 192, 241);
+}
+input,button{
+    padding: 10px;
+    height: 30px;
+}
+fieldset{
+    margin-bottom: 20px;
+}

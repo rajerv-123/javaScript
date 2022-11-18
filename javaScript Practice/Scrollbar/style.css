@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(126, 222, 247);
+}
+
+#myinput {
+    width: 100%;
+    border: 2px solid rgb(240, 91, 5);
+}
+
+#mytable {
+    width: 100%;
+    border: 2px solid;
+    text-align: center;
+    background-color: darkolivegreen;
+}
+
+.header{
+    border: 2px solid;
+    background-color: rgb(64, 16, 236);
+    text-align: center;
+    width: 500px;
+}
+tr td{
+    border: 2px solid red;
+    width: 500px;
+    text-align: center;
+
+}

@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+    background-color: rgb(250, 184, 4);
+}
+div{
+    background-color: rgb(178, 5, 201);
+    border: 2px solid black;
+    padding: 20px;
+    width: 60%;
+    height: auto;
+    margin: auto;
+}
+input{
+    float: right;
+}
+form{
+    margin: auto;
+}

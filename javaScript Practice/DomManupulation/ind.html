@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <h1 id="heading">DOM</h1>
+    <button onclick="col()" ondblclick="st1()" onmouseover="cl()" onm>change</button>
+    <button onclick="change()">Change background</button>
+
+    <script>
+        function cl() {
+            document.getElementById("heading").innerHTML = "document Object Model"
+        }
+
+        function col() {
+            var c = document.getElementById("heading")
+            c.innerHTML = "document Object Model"
+            c.style.color = "blue"
+            c.style.border = "2px solid green"
+            c.style.backgroundColor = "red"
+        }
+        function st1() {
+            var c = document.getElementById("heading")
+            c.style.color = "green"
+            c.style.textAlign = "center"
+            c.style.fontStyle = "italic"
+            c.style.border = " 4px solid skyblue"
+            c.style.background = " aqua"
+        }
+        function change(){
+            var a = document.getElementById("heading")
+            a.style.backgroundColor="green"
+        }
+
+    </script>
+</body>
+
+</html>
